@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y wget \
   && wget -q https://freescaleesd.flexnetoperations.com/337170/797/13845797/mcuxpressoide-10.3.0_2200.x86_64.deb.bin \
   && chmod +x /root/${BIN_FILE} \
   && ./${BIN_FILE} --noexec --target mcuxpresso \
-  && dpkg --unpack ${DEB_FILE} \
+  && dpkg --unpack mcuxpresso/${DEB_FILE} \
   && rm /var/lib/dpkg/info/mcuxpressoide.postinst -f \
   && dpkg --configure --force-depends mcuxpressoide \
   && rm -rf /root/* \
