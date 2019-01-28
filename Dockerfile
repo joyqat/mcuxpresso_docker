@@ -2,7 +2,7 @@ FROM ubuntu
 ARG BASENAME=mcuxpressoide-10.3.0_2200
 ARG DEB_FILE=${BASENAME}.x86_64.deb
 ARG BIN_FILE=${DEB_FILE}.bin
-RUN apt-get update && apt-get install wget \
+RUN apt-get update && apt-get -y install wget \
   && cd /root \n\
   && wget https://freescaleesd.flexnetoperations.com/337170/797/13845797/mcuxpressoide-10.3.0_2200.x86_64.deb.bin \n\
   && chmod +x /root/${BIN_FILE} \n\
