@@ -1,5 +1,5 @@
 FROM ubuntu
-ARG BASENAME=mcuxpressoide-10.3.0_2200
+ARG BASENAME=mcuxpressoide-11.0.0_2516
 ARG DEB_FILE=${BASENAME}.x86_64.deb
 ARG BIN_FILE=${DEB_FILE}.bin
 RUN apt-get update && apt-get install -y wget make \
