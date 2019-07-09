@@ -4,7 +4,7 @@ ARG DEB_FILE=${BASENAME}.x86_64.deb
 ARG BIN_FILE=${DEB_FILE}.bin
 RUN apt-get update && apt-get install -y wget make \
   && cd /root \
-  && wget -q https://freescaleesd.flexnetoperations.com/337170/797/13845797/mcuxpressoide-10.3.0_2200.x86_64.deb.bin \
+  && wget -q https://freescaleesd.flexnetoperations.com/337170/387/14523387/mcuxpressoide-11.0.0_2516.x86_64.deb.bin \
   && chmod +x /root/${BIN_FILE} \
   && ./${BIN_FILE} --noexec --target mcuxpresso \
   && dpkg --unpack mcuxpresso/${DEB_FILE} \
