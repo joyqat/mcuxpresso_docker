@@ -1,3 +1,6 @@
+# DEPRECATED
+Since NXP blocks unauthencated downloading now, this repo won't update any more.
+
 # mcuxpresso_docker
 This image is used for ci purpose.
 You can run 
